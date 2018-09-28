@@ -11,6 +11,7 @@ def home(request):
 	# print request.session['username']
 	return render(request,'home.html',{})
 
+# added comment
 def add(request):
 	print request.POST,"uppppppppppp"
 	# print request.session['username'],"jjjjjjjjjjjjjjjjjj"
