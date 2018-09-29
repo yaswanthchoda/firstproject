@@ -12,3 +12,8 @@ class TestAdd(TestCase):
 		c = self.client.post(reverse('add'), data={'name':"yyyy", "address":"jjjjj"})
 		c = json.loads(c.content)
 		self.assertEqual(c["status"],"success")
+		
+	def test_home(self):
+		url = reverse('home')
+	       response = self.client.get(url)
+	       self.assertTemplateUsed(response, 'home.html')
