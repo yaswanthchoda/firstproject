@@ -20,7 +20,7 @@ from firstapp.views import *
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^home/', home),
-    url(r'^add/', add),
+    url(r'^add/', add, name="add"),
  #    url(r'^blog/', include('zinnia.urls')),
 	# url(r'^djcomments/', include('django.contrib.comments.urls')),
 ]
