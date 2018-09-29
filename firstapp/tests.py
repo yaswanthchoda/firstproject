@@ -15,5 +15,5 @@ class TestAdd(TestCase):
 		
 	def test_home(self):
 		url = reverse('home')
-	       response = self.client.get(url)
-	       self.assertTemplateUsed(response, 'home.html')
+		response = self.client.get(url)
+		self.assertTemplateUsed(response, 'home.html')
