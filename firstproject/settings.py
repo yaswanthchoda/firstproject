@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'firstapp',
+    'django_jenkins',
     # 'zinnia',
 ]
 # SITE_ID = 1
@@ -73,6 +74,14 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'firstproject.wsgi.application'
+
+JENKINS_TASKS = (
+    'django_jenkins.tasks.run_pep8',
+    # 'django_jenkins.tasks.run_pyflakes',
+    # 'django_jenkins.tasks.run_jslint',
+    # 'django_jenkins.tasks.run_csslint',    
+    # 'django_jenkins.tasks.run_sloccount'
+)
 
 
 # Database
